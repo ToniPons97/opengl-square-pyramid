@@ -13,14 +13,12 @@
 #include "Window.h"
 #include <stdio.h>
 
-
 void CreateObjects();
 void CreateShaders();
 void SetRotations(GLFWwindow *window, glm::vec2 *rotations, float* rotationAmount);
 void UpdateColor(Shader* shader);
 
 GLint WIDTH = 800, HEIGHT = 600;
-
 
 std::vector<Mesh*> meshList;
 std::vector<Shader> shaderList;
@@ -108,7 +106,7 @@ int main(void)
 
 void CreateObjects()
 {
-    // Tetraedro
+    // Square pyramid
     GLfloat vertices[] = {
         // Base vertices
         -1.0f, -1.0f, -1.0f, // 0 bottom left back
